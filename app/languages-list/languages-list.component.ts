@@ -10,7 +10,7 @@ const LANGUAGES: Language[] = [
     {label: 'Украинский', code: 'ua'},
 ];
 
-const LIST_ITEMS:[] = ['One', 'Two', 'Three'];
+const LIST_ITEMS: string[] = ['One', 'Two', 'Three'];
 
 @Component({
     selector: 'languages-list',
