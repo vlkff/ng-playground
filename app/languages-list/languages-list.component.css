@@ -1,0 +1,12 @@
+.list li {
+    color: green;
+}
+
+.list li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list li.active {
+    text-decoration: underline;
+}

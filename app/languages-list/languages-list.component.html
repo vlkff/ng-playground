@@ -1,0 +1,13 @@
+<ul class="list">
+    <li *ngFor="let lang of langList" (click)="onClick(lang)" [class]=getLiClasses(lang)     >
+        {{lang.label}}
+    </li>
+    <li>Item1</li>
+    <li>Item2</li>
+</ul>
+
+<div>Counter: {{counter}}</div>
+
+<div *ngIf="visible">Visible</div>
+
+<div *ngIf="selectedLang">{{selectedLang.label}}</div>
