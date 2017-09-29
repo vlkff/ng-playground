@@ -1,0 +1,14 @@
+nav a {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav a.active-menu-link {
+    padding: 8px;
+    font-size: 1.4em;
+}

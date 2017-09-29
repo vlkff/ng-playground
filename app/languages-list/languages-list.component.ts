@@ -13,9 +13,10 @@ const LANGUAGES: Language[] = [
 const LIST_ITEMS: string[] = ['One', 'Two', 'Three'];
 
 @Component({
+    moduleId: module.id,
     selector: 'languages-list',
-    templateUrl: 'app/languages-list/languages-list.component.html',
-    styleUrls: ['app/languages-list/languages-list.component.css'],
+    templateUrl: 'languages-list.component.html',
+    styleUrls: ['languages-list.component.css'],
 })
 export class LanguagesListComponent {
 
