@@ -4,22 +4,36 @@
 
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 
-import { LanguagesListComponent } from './languages-list/languages-list.component';
-import { SomePageComponent } from './some-page/some-page.component';
+import {
+    AppComponent,
+    routes,
+    LanguagesListComponent,
+    SomePageComponent,
+    CounterHostComponent,
+    CounterComponent,
+    MytimerComponent,
+    TimerComponent,
+    MessageBoxComponent
+
+} from './index';
 
 @NgModule({
     imports: [
         BrowserModule,
-        RouterModule.forRoot([
-            { path: 'languages', component: LanguagesListComponent },
-            { path: 'some-page', component: SomePageComponent },
-            { path: '', redirectTo: 'some-page', pathMatch: 'full' }
-        ])
+        RouterModule.forRoot(routes)
     ],
-    declarations: [AppComponent, LanguagesListComponent, SomePageComponent],
+    declarations: [
+        AppComponent,
+        LanguagesListComponent,
+        SomePageComponent,
+        CounterHostComponent,
+        CounterComponent,
+        MytimerComponent,
+        TimerComponent,
+        MessageBoxComponent
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,0 +1,5 @@
+<fieldset *ngIf="visible">
+<h3>{{title}}</h3>
+<p><ng-content></ng-content></p>
+<div><button (click)="onHide()">Dismiss</button></div>
+</fieldset>

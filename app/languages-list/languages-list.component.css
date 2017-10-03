@@ -1,5 +1,5 @@
 .list li {
-    color: green;
+    color: black;
 }
 
 .list li:hover {
@@ -9,4 +9,21 @@
 
 .list li.active {
     text-decoration: underline;
+}
+
+h1 {
+    color: red;
+}
+
+:host {
+    border: 1px solid black;
+    display: block;
+}
+
+:host-context(.red) li {
+    color: red;
+}
+
+:host-context(.green) li {
+    color: green;
 }

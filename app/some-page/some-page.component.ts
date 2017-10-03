@@ -1,5 +1,5 @@
 /**
- * Created by vlad on 28.09.17.
+ * A component skeleton
  */
 import {Component} from '@angular/core';
 

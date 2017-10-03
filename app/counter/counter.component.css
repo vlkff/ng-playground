@@ -1,0 +1,14 @@
+.wrapper {
+    margin: 20px;
+}
+
+.wrapper div {
+    margin: 10px;
+}
+
+.btn {
+    padding: 5px;
+    background: dimgray;
+    color: white;
+    border-radius: 4px;
+}

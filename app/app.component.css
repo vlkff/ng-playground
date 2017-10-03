@@ -12,3 +12,7 @@ nav a.active-menu-link {
     padding: 8px;
     font-size: 1.4em;
 }
+
+:host /deep/ li {
+    text-decoration: none;
+}
