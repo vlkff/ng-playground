@@ -14,6 +14,9 @@ export class TimerComponent {
     private currentValue: number = 0;
 
     @Input()
+    active: boolean;
+
+    @Input()
     interval: number = 1000;
 
     @Output()
@@ -21,11 +24,15 @@ export class TimerComponent {
 
     start() {
         if (this.intervalObject) return;
+
+        this.active = true;
         this.intervalObject = setInterval(() => { this.callback() }, this.interval);
     }
 
     stop() {
         if(!this.intervalObject) return;
+
+        this.active = false;
         clearInterval(this.intervalObject);
         this.intervalObject = false;
     }

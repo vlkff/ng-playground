@@ -1,7 +1,7 @@
 /**
  * A component skeleton
  */
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit, OnChanges, OnDestroy} from '@angular/core';
 
 @Component({
     moduleId: module.id,
@@ -9,7 +9,7 @@ import {Component, Input} from '@angular/core';
     templateUrl: 'message-box.component.html',
     styleUrls: ['message-box.component.css'],
 })
-export class MessageBoxComponent {
+export class MessageBoxComponent implements OnInit, OnChanges, OnDestroy {
 
     @Input()
     title: string = 'Default Title';
@@ -19,5 +19,17 @@ export class MessageBoxComponent {
     onHide() {
         console.log('hide');
         this.visible = false;
+    }
+
+    ngOnInit() {
+        console.log('run on-init');
+    }
+
+    ngOnDestroy() {
+        console.log('run on-destroy');
+    }
+
+    ngOnChanges() {
+        console.log('run on-changes');
     }
 }

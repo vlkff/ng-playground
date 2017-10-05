@@ -1,4 +1,16 @@
-nav a {
+
+.main-nav {
+    width: 150px;
+}
+
+.main-nav ul {padding: 0}
+.main-nav li {
+    list-style: none;
+}
+
+.main-nav .nav-item {
+    display: inline-block;
+    margin: 5px;
     background-color: red;
     color: white;
     padding: 5px;
@@ -8,7 +20,7 @@ nav a {
     transition: all 0.5s;
 }
 
-nav a.active-menu-link {
+.main-nav .nav-item.active-menu-link {
     padding: 8px;
     font-size: 1.4em;
 }
@@ -16,3 +28,8 @@ nav a.active-menu-link {
 :host /deep/ li {
     text-decoration: none;
 }
+
+.container {
+    display: flex;
+}
+

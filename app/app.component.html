@@ -1,11 +1,20 @@
 <h1>~!! Hello World !!~</h1>
 
-<nav>
-    <a routerLink="/languages" routerLinkActive="active-menu-link">languages</a>
-    <a routerLink="/some-page" routerLinkActive="active-menu-link">Some page</a>
-    <a routerLink="/counter-host" routerLinkActive="active-menu-link">Counter host</a>
+<div class="container">
+
+<nav class="main-nav">
+    <ul>
+    <li><a class="nav-item" routerLink="/languages" routerLinkActive="active-menu-link">languages</a></li>
+    <li><a class="nav-item" routerLink="/some-page" routerLinkActive="active-menu-link">Some page</a></li>
+    <li><a class="nav-item" routerLink="/counter-host" routerLinkActive="active-menu-link">Counter host</a></li>
+    </ul>
 </nav>
 
-<div class="green">
+
+
+<content class="green">
+    <nav><a href="#">Link</a></nav>
     <router-outlet></router-outlet>
+</content>
+
 </div>

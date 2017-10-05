@@ -11,7 +11,15 @@ import {Component} from '@angular/core';
 })
 export class CounterHostComponent {
 
+    timerActive: boolean;
+
+    innerCounter: number = 0;
+
     onTick(tick) {
         console.log('Tick is:' + tick);
+    }
+
+    incrementInnerCounter() {
+        this.innerCounter++;
     }
 }

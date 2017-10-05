@@ -1,7 +1,14 @@
-<counter></counter>
+<span>Is inner timer is active:</span> <span *ngIf="timerActive">YES</span>
+<div>Inner counter value: {{innerCounter}}</div>
+<button (click)="incrementInnerCounter()">Increment inner counter</button>
+
+<counter [counterValue]="innerCounter" [counterName]="'Counter 1 with binded value'"></counter>
+<counter [counterValue]="innerCounter" [counterName]="'Counter 2 with binded value'"></counter>
+<counter [counterValue]="innerCounter" [counterName]="'Counter 3 with binded value'"></counter>
 <counter [counterName]="'The name'" counterValue=5></counter>
 <mytimer (tick)="onTick($event)"></mytimer>
-<timer (tick)="onTick($event)"></timer>
+<timer [active]="timerActive" (tick)="onTick($event)"></timer>
+{{timerActive}}
 <message-box title="Box 1">
     Lorem Ipsum Ipsum Ipsum
 </message-box>
