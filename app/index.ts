@@ -9,4 +9,5 @@ export * from './counter/counter.component';
 export * from './mytimer/mytimer.component';
 export * from './timer/timer.component';
 export * from './message-box/message-box.component';
+export * from './collapsible-box/collapsible-box.component';
 export * from './routes';

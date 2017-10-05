@@ -15,7 +15,8 @@ import {
     CounterComponent,
     MytimerComponent,
     TimerComponent,
-    MessageBoxComponent
+    MessageBoxComponent,
+    CollapsibleBoxComponent
 
 } from './index';
 
@@ -32,7 +33,8 @@ import {
         CounterComponent,
         MytimerComponent,
         TimerComponent,
-        MessageBoxComponent
+        MessageBoxComponent,
+        CollapsibleBoxComponent
     ],
     bootstrap: [AppComponent]
 })
