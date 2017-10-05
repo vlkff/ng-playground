@@ -8,7 +8,6 @@ import { RouterModule } from "@angular/router";
 
 import {
     AppComponent,
-    routes,
     LanguagesListComponent,
     SomePageComponent,
     CounterHostComponent,
@@ -16,15 +15,21 @@ import {
     MytimerComponent,
     TimerComponent,
     MessageBoxComponent,
-    CollapsibleBoxComponent
+    CollapsibleBoxComponent,
+    CardComponent,
+    CardsPageComponent,
+    CardsSetComponent
 
 } from './index';
+
+import {routes} from './routes';
 
 @NgModule({
     imports: [
         BrowserModule,
         RouterModule.forRoot(routes)
     ],
+    bootstrap: [AppComponent],
     declarations: [
         AppComponent,
         LanguagesListComponent,
@@ -34,9 +39,11 @@ import {
         MytimerComponent,
         TimerComponent,
         MessageBoxComponent,
-        CollapsibleBoxComponent
-    ],
-    bootstrap: [AppComponent]
+        CollapsibleBoxComponent,
+        CardComponent,
+        CardsPageComponent,
+        CardsSetComponent
+    ]
 })
 export class AppModule {
 

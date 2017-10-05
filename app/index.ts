@@ -10,4 +10,7 @@ export * from './mytimer/mytimer.component';
 export * from './timer/timer.component';
 export * from './message-box/message-box.component';
 export * from './collapsible-box/collapsible-box.component';
-export * from './routes';
+export * from './cards-set/cards-set.component';
+export * from './cards-page/cards-page.component';
+export * from './card/card.component';
+
