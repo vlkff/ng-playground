@@ -1,5 +1,6 @@
 /**
  * Alternative implementation of timer example.
+ * Emit event
  */
 import {Component, Output, EventEmitter} from '@angular/core';
 

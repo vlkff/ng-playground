@@ -6,6 +6,9 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 
+import { CommonModule } from "@angular/common"
+import { FormsModule } from "@angular/forms"
+
 import {
     AppComponent,
     LanguagesListComponent,
@@ -27,6 +30,8 @@ import {routes} from './routes';
 @NgModule({
     imports: [
         BrowserModule,
+        FormsModule,
+        CommonModule,
         RouterModule.forRoot(routes)
     ],
     bootstrap: [AppComponent],

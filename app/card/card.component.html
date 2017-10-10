@@ -1,1 +1,15 @@
-<span *ngIf="visible">I am a card</span>
+<div *ngIf="visible">
+    I am a {{getFullName()}} <br/>
+    <img src="{{picSrc}}" width="100" >
+    Name: {{first}}, Last name: {{last}}
+    {{1 + 1}}
+    <br>
+    <button (click)="printAge()">Tell me your age</button>
+    <input type="text" size="10" [value]="age" (input)="age = $event.target.value">
+
+    <button (click)="printHeight()">Tell me your height</button>
+    <input id='height' type="text" size="10" [ngModel]="height" (ngModelChange)="height = $event">
+
+    <button (click)="printWeight()">Tell me your weight</button>
+    <input type="text" size="10" [(ngModel)]="weight" >
+</div>

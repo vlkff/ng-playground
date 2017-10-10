@@ -1,5 +1,5 @@
 /**
- * A component skeleton
+ * Demo components interaction and bindings
  */
 import {Component} from '@angular/core';
 //import {Card} from '../card/card.component';
