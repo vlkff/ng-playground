@@ -2,3 +2,15 @@
     border: 1px solid yellow;
     display: block;
 }
+
+.background {
+    background-color: dimgray;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.capital {
+    text-transform: capitalize;
+}

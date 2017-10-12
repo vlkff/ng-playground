@@ -21,8 +21,8 @@ import {
     CollapsibleBoxComponent,
     CardComponent,
     CardsPageComponent,
-    CardsSetComponent
-
+    CardsSetComponent,
+    CardsProvider
 } from './index';
 
 import {routes} from './routes';
@@ -48,7 +48,8 @@ import {routes} from './routes';
         CardComponent,
         CardsPageComponent,
         CardsSetComponent
-    ]
+    ],
+    providers: [CardsProvider]
 })
 export class AppModule {
 

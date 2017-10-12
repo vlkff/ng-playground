@@ -1,6 +1,10 @@
-<div *ngIf="visible">
+<div *ngIf="visible" [ngClass]="classes">
+    Background: <input type="checkbox" [(ngModel)]="classes.background">|
+    Border: <input type="checkbox" [(ngModel)]="classes.border">|
+    Capitalize: <input type="checkbox" [(ngModel)]="classes.capital">
+    <br/>
     I am a {{getFullName()}} <br/>
-    <img src="{{picSrc}}" width="100" >
+    <img src="{{picSrc}}" width="100" [ngClass]="['border']">
     Name: {{first}}, Last name: {{last}}
     {{1 + 1}}
     <br>

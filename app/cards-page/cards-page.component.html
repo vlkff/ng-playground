@@ -1,8 +1,7 @@
 <h2>Cards Page </h2>
+
+<card [first]="special.first" [last]="special.last"></card>
+
 <cards-set>
-    <card first="Alex" last="Molchanov"></card>
-    <card first="Alex" last="Schedrov"></card>
-    <card first="Alex" last="Kostenko"></card>
-    <card first="Alex" last="Ivanov"></card>
-    <card first="Alex" last="Kuznecov"></card>
+    <card *ngFor="let card of cards" [first]="card.first" [last]="card.last"></card>
 </cards-set>

@@ -1,6 +1,7 @@
 /**
  * A card component.
  * Demo 3 way of bindings.
+ * Demo classes directives
  */
 import {Component, Input} from '@angular/core';
 
@@ -20,6 +21,12 @@ export class CardComponent {
 
     @Input()
     last: string = 'default last name';
+
+    classes = {
+        background: true,
+        border: true,
+        capital: true,
+    };
 
     age: number = 0;
 

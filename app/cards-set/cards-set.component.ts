@@ -23,6 +23,7 @@ export class CardsSetComponent implements  AfterContentInit {
     }
 
     showAll() {
+
         this.cards.forEach(function (card: Card) {
             card.show();
         })
